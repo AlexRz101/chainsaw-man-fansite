@@ -1,7 +1,8 @@
-/* font-family: 'Bebas Neue', sans-serif; */
-
+/* No scrolling, no margins and entire viewport height */
 body {
     overflow: hidden;
+    margin: 0;
+    height: 100%;
 }
 
 .navSpace {
@@ -12,15 +13,6 @@ body {
     padding-top: 1em;
 }
 
-.h1Space {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 1em;
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
-}
-
 .images {
     justify-content: center;
     flex-direction: row;
@@ -28,7 +20,56 @@ body {
 
 h1 {
     font-family: 'Bebas Neue', sans-serif;
-    border-block: solid;
     writing-mode: horizontal-tb;
+    font-size: 4rem;
+    text-shadow: 3px 3px 3px orange;
 }
 
+.flexHeader {
+    height: 20vh;
+    border: solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexFooter {
+    height: 10vh;
+    border: solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-color: black
+}
+
+.footerFontColor {
+    color: white;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 70vh;
+}
+
+.box1 {
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box2 {
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box3 {
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
