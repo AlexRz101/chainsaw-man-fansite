@@ -200,3 +200,13 @@ ul {
     height: auto;
     object-fit: contain;
 }
+
+/* timeline.html list style swapped with bullets */
+.arcList {
+    list-style: disc;
+}
+
+.imgResize {
+    max-height: 200px;
+    object-fit: contain;
+}
