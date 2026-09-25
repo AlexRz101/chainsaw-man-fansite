@@ -126,7 +126,6 @@ ul {
 }
 
 .box2 {
-    background-color: red;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -138,7 +137,6 @@ ul {
 }
 
 .box3 {
-    background-color: green;
     display: flex;
     justify-content: center;
     align-items: center;
