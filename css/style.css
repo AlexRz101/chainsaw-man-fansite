@@ -54,6 +54,10 @@ ul {
     background: linear-gradient(rgb(37, 35, 35), rgb(81, 77, 77), rgb(37, 35, 35));
 }
 
+.padding {
+    padding: 5%;
+}
+
 
 /* Tailwind css alternative lol */
 .justify-center {
@@ -201,10 +205,26 @@ ul {
 
 /* timeline.html list style swapped with bullets */
 .arcList {
-    list-style: disc;
+    list-style: none;
 }
 
+/* timeline.html image resizing */
 .imgResize {
     max-height: 200px;
     object-fit: contain;
+}
+
+.timelineList {
+    border-bottom: solid;
+    padding: 5%;
+}
+
+/* Lore Text Layout */
+.loreLayout {
+    margin-inline: 15%;
+}
+
+/* Timeline Text Layout */
+.timelineLayout {
+    margin-inline: 15%;
 }
