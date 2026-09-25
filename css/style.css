@@ -1,21 +1,16 @@
-/* No scrolling, no margins and entire viewport height */
-body {
-    overflow: hidden;
-    margin: 0;
+/* 
+No scrolling, no margins and entire viewport height
+Global CSS elements
+*/
+
+html {
     height: 100%;
 }
 
-.navSpace {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 1em;
-    padding-top: 1em;
-}
-
-.images {
-    justify-content: center;
-    flex-direction: row;
+body {
+    margin: 0;
+    height: 100%;
+    min-height: 100vh;
 }
 
 h1 {
@@ -34,16 +29,18 @@ h1 {
     color: black;
 }
 
-.footerText {
-    font-family: 'Bebas Neue', sans-serif;
-    writing-mode: horizontal-tb;
-    font-size: 2rem;
-    text-shadow: 3px 3px 3px orange;
-    color: rgb(221, 210, 210);
+.images {
+    justify-content: center;
+    flex-direction: row;
 }
 
+ul {
+    list-style: none;
+}
+
+/* Header */
 .flexHeader {
-    height: 20vh;
+    height: auto;
     border: solid;
     display: flex;
     justify-content: center;
@@ -51,10 +48,23 @@ h1 {
     background-color: rgb(37, 35, 35);
 }
 
+/* Nav */
+.navBar {
+    width: 100%;
+    display: flex;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    column-gap: 8em;
+}
+
+/* Footer */
 .flexFooter {
     height: 10vh;
     border: solid;
-    border-color: rgb(221, 210, 210);
+    border-color: rgb(0, 0, 0);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,8 +75,16 @@ h1 {
     color: rgb(221, 210, 210);
 }
 
+.footerText {
+    font-family: 'Bebas Neue', sans-serif;
+    writing-mode: horizontal-tb;
+    font-size: 2rem;
+    text-shadow: 3px 3px 3px orange;
+    color: rgb(221, 210, 210);
+}
+
 /* Grid container for index.html */
-.gridContainer {
+.gridContainer1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     height: 70vh;
@@ -108,7 +126,7 @@ h1 {
     transition: opacity 0.3s ease;
 }
 
-/* Psuedo hover effects */
+/* Pseudo hover effects */
 .box1:hover {
     opacity: 1;
 }
@@ -119,4 +137,40 @@ h1 {
 
 .box3:hover {
     opacity: 1;
+}
+
+/* Layout all the character cards on characters.html*/
+.characterCardLayout {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3em;
+    padding: 2em;
+}
+
+/* Character card layout */
+.characterCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 250px;
+    border-color: black;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.border {
+    border-style: solid;
+    border-left: black;
+    border-right: black;
+    width: 100%;
+}
+
+.characterCardImg {
+    max-height: 250px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
 }
