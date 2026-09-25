@@ -38,6 +38,12 @@ ul {
     list-style: none;
 }
 
+/* Tailwind css alternative lol */
+.justify-center {
+    display: flex;
+    justify-content: center;
+}
+
 /* Header */
 .flexHeader {
     height: auto;
@@ -161,6 +167,7 @@ ul {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
+/* h2 border on card */
 .border {
     border-style: solid;
     border-left: black;
@@ -168,6 +175,7 @@ ul {
     width: 100%;
 }
 
+/* Card image config */
 .characterCardImg {
     max-height: 250px;
     width: 100%;
