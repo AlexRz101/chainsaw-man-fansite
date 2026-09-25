@@ -55,7 +55,7 @@ ul {
 }
 
 .padding {
-    padding: 5%;
+    padding-bottom: 5%;
 }
 
 
@@ -216,7 +216,6 @@ ul {
 
 .timelineList {
     border-bottom: solid;
-    padding: 5%;
 }
 
 /* Lore Text Layout */
