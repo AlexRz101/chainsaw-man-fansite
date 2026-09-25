@@ -206,6 +206,7 @@ ul {
 /* timeline.html list style swapped with bullets */
 .arcList {
     list-style: none;
+    padding-left: 0;
 }
 
 /* timeline.html image resizing */
