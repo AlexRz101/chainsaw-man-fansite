@@ -29,6 +29,18 @@ h1 {
     color: black;
 }
 
+.textLight {
+    font-family: 'Bebas Neue', sans-serif;
+    writing-mode: horizontal-tb;
+    font-size: 2rem;
+    text-shadow: 3px 3px 3px orange;
+    color: white;
+}
+
+.textWhite {
+    color: white;
+}
+
 .images {
     justify-content: center;
     flex-direction: row;
@@ -37,6 +49,11 @@ h1 {
 ul {
     list-style: none;
 }
+
+.background {
+    background: linear-gradient(rgb(37, 35, 35), rgb(81, 77, 77), rgb(37, 35, 35));
+}
+
 
 /* Tailwind css alternative lol */
 .justify-center {
@@ -157,6 +174,7 @@ ul {
 
 /* Character card layout */
 .characterCard {
+    background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -164,7 +182,7 @@ ul {
     text-align: center;
     width: 250px;
     border-color: black;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 5px 10px white;
 }
 
 /* h2 border on card */
