@@ -1,22 +1,15 @@
 /* 
-No scrolling, no margins and entire viewport height
+No default margins
 Global CSS elements
 */
 
-html {
-    height: 100%;
-}
-
 body {
-    margin: 0;
-    height: 100%;
-    min-height: 100vh;
+    margin: 0; /* Remove default margin space*/
     font-family: "Oswald", sans-serif;
 }
 
 h1 {
     font-family: 'Bebas Neue', sans-serif;
-    writing-mode: horizontal-tb;
     font-size: 4rem;
     text-shadow: 3px 3px 3px orange;
     color: rgb(221, 210, 210);
@@ -24,7 +17,6 @@ h1 {
 
 .text {
     font-family: 'Bebas Neue', sans-serif;
-    writing-mode: horizontal-tb;
     font-size: 2rem;
     text-shadow: 3px 3px 3px orange;
     color: black;
@@ -32,19 +24,13 @@ h1 {
 
 .textLight {
     font-family: 'Bebas Neue', sans-serif;
-    writing-mode: horizontal-tb;
-    font-size: 2rem;
+    font-size: 2rem; /* Set font size to 2 times the root font size */
     text-shadow: 3px 3px 3px orange;
     color: white;
 }
 
 .textWhite {
     color: white;
-}
-
-.images {
-    justify-content: center;
-    flex-direction: row;
 }
 
 ul {
@@ -56,7 +42,7 @@ ul {
 }
 
 .padding {
-    padding-bottom: 5%;
+    padding-bottom: 5%; /* Extra bottom padding */
 }
 
 
@@ -83,7 +69,7 @@ ul {
     height: auto;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* If overflow, wrap to next row */
     box-sizing: border-box;
     column-gap: 8em;
 }
@@ -105,7 +91,6 @@ ul {
 
 .footerText {
     font-family: 'Bebas Neue', sans-serif;
-    writing-mode: horizontal-tb;
     font-size: 2rem;
     text-shadow: 3px 3px 3px orange;
     color: rgb(221, 210, 210);
@@ -126,7 +111,7 @@ ul {
     background-image: url('https://i.pinimg.com/originals/a5/de/2f/a5de2f357d8adae1ca8ac843d0d15f7b.jpg');
     background-size: cover;
     background-position: center;
-    opacity: 0.5;
+    opacity: 0.5; /* Transparency effect, lower = more transparent */
     transition: opacity 0.3s ease;
 }
 
@@ -152,17 +137,11 @@ ul {
     transition: opacity 0.3s ease;
 }
 
-/* Pseudo hover effects */
-.box1:hover {
-    opacity: 1;
-}
-
-.box2:hover {
-    opacity: 1;
-}
-
+/* Pseudo hover effects, when hovered, go back to full opacity */
+.box1:hover,
+.box2:hover,
 .box3:hover {
-    opacity: 1;
+    opacity: 1; /* Full visibility */
 }
 
 /* Layout all the character cards on characters.html*/
@@ -199,15 +178,13 @@ ul {
 /* Card image config */
 .characterCardImg {
     max-height: 250px;
-    width: 100%;
     height: auto;
-    object-fit: contain;
 }
 
 /* timeline.html list style swapped with bullets */
 .arcList {
     list-style: none;
-    padding-left: 0;
+    padding-left: 0; /* Get rid of default left padding */
 }
 
 /* timeline.html image resizing */
@@ -222,7 +199,7 @@ ul {
 
 /* Lore Text Layout */
 .loreLayout {
-    margin-inline: 15%;
+    margin-inline: 15%; /* 15% margin space on left AND right */
 }
 
 /* Timeline Text Layout */
