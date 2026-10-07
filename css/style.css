@@ -45,6 +45,19 @@ ul {
     padding-bottom: 5%; /* Extra bottom padding */
 }
 
+/* Make the page fill the screen; nav stretches to take up leftover space */
+.fullHeight {
+    min-height: 100vh;
+    min-height: 100dvh; /* accounts for mobile browser toolbars */
+    display: flex;
+    flex-direction: column;
+}
+
+.fullHeight .gridContainer1 {
+    flex: 1;          /* grow to fill whatever space is left */
+    height: auto;     /* overrides the fixed 70vh */
+    min-height: 70vh; /* keeps the old size on short screens */
+}
 
 /* Tailwind css alternative lol */
 .justify-center {
